@@ -1,0 +1,17 @@
+<article class="list-animals">
+    
+    <animals-card
+        ng-repeat="item in animalsList.allAnimals" 
+        item-animal="item"
+        ng-click="animalsList.goToDetail()"
+        >
+    </animals-card>
+
+    <button ng-click="animalsList.rightOrder()"> Up </button>
+    <button ng-click="animalsList.rightOrder()"> Down </button> 
+
+
+<!--debo pasar como parametro el id y luego en animals list debo indicarlo
+en el onInit-->
+
+</article>
